@@ -6,7 +6,7 @@ using namespace std;
 
 int R, C;
 char arr[52][52];
-int visited[52][52] = { 0 };
+int visited[52][52] = { 0 }; //몇번째로 방문했는지 
 int dx[4] = { 0, 1, 0, -1 }, dy[4] = { 1, 0, -1, 0 };
 int go_x, go_y, gool_x, gool_y; //go:시작점, gool: 도착점
 queue<pair<int, int>> river;//물이 있는 지역
