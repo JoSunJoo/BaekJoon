@@ -3,7 +3,13 @@
 #include<iostream>
 using namespace std;
 
-long long gcd(long long a, long long b) {
+/*
+이 문제는 중학교때? 배운 순환소수를 분수로 바꾸는 공식을 활용하는 문제이다.
+정말 어처구니 없게 나는 long long을 printf("%u");로 출력을 해서 4번 틀리는 기적을 맛보았다...
+공식 자체는 인터넷으로 찾아보면 쉽게 이해하리라 생각한다.
+*/
+
+long long gcd(long long a, long long b) {//최대공약수 구하는 함수
 	return a % b ? gcd(b, a%b) : b;
 }
 
